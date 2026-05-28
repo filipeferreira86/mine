@@ -4,7 +4,6 @@ import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
 
 /**
@@ -22,7 +21,6 @@ public final class Pendragon {
     public Pendragon(IEventBus modBus) {
         LOGGER.info("Pendragon: 5e Adventures — booting (Fase 0 skeleton)");
         modBus.addListener(this::commonSetup);
-        NeoForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
