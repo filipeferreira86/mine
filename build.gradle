@@ -49,10 +49,6 @@ neoForge {
                     '--existing', file('src/main/resources/').getAbsolutePath()
             systemProperty 'pendragon.dev', 'data'
         }
-
-        configureEach {
-            modSource project.sourceSets.main
-        }
     }
 
     mods {
